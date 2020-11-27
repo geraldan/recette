@@ -1,9 +1,8 @@
 <?php 
 include('pdo.php');
 
-$sql = $pdo->prepare("SELECT * FROM recettes")->exec();
+$sql = $pdo->prepare("SELECT * FROM recettes")->execute();
 
 $recette = $sql->fetchAll();
 
 ?>
-<!-- il faudras un form pour le referencement a voir -->

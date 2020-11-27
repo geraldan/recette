@@ -9,3 +9,5 @@ $requirement= $_POST['requirement'];
 $sql = $pdo->prepare("INSERT INTO verifs (plate_name, recette, ingredient, requirement)
 VALUES
 ('$plate_name','$recette','$ingredient', '$requirement')")->execute();
+
+header("refresh:2; url=index.php");
